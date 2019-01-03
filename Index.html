@@ -1,110 +1,100 @@
 <!DOCTYPE html>
-<html>
-<title>Favorite Animal</title>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<html lang="en">
 <head>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower" rel="stylesheet">
 <style>
-.dropdown {
-  position: relative;
-  display: inline-block;
+* {
+  box-sizing: border-box;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
+body {
+  font-family: 'Amatic SC', cursive;
+  margin: 0;
 }
 
-.dropdown:hover .dropdown-content {
+.header {
+  padding: 100px;
+  text-align: center;
+  background-image: url('IMG_4484.jpg');
+  background-position: center;
+  color: white;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: right;
   display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: underline overline wavy white;
 }
 
-div{
-  width:100px;
-  height:100px;
-  position: relative;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: 4s;
-  animation-direction: alternate;
+.navbar a:hover {
+  background-color: yellow;
+  color: black;
 }
-@keyframes example {
-0% {
-background-color: red;
-left: 0px;
-top: 0px;
+.navbar a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }
-25% {
-background-color: blue;
-left: 0px;
-top: 200px;
+.navbar a:active {
+  color: yellow;
+  text-color: black;
+  text-decoration: underline;
 }
-50% {
-background-color: green;
-left: 200px;
-top: 200px;
+.footer {
+  padding: 10px;
+  font-size: 10px;
+  text-align: left;
+  background: lightgrey;
 }
-75% {
-background-color: yellow;
-left: 200px;
-top: 0px;
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
 }
-100% {
-background-color: red;
-left: 0px;
-top: 0px;}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
 }
 </style>
 </head>
 <body>
-  <p id='text'></p>
-  <script type="text/JavaScript">
-    //replace with alert JS
-    window.alert ("Welcome!")
-    //replace with log JS
-    console.log("Everything worked!")
-  </script>
 
-<h2>Meghan Guiller</h2>
-
-<div class="dropdown">
-  <span>Favorite Animals</span>
-  <div class="dropdown-content">
-  <p>I Love All Animals</p>
-  </div>
+<div class="header">
+  <h1>About My Life</h1>
 </div>
 
-  <table class="w3-table-all">
-    <tr>
-      <th>Animal Names</th>
-      <th>Liking Out of 5 </th>
-    </tr>
-    <tr>
-      <td>Gorilla</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>Panda</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Dog</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Dolphin</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Hairless Cat</td>
-      <td>2</td>
-    </tr>
-  </table>
+<div class="navbar">
+  <a href="file:///C:/Users/guill/Documents/GitHub/web-fall18/meghan/Final/imagery.html"target="_blank">Imagery</a>
+  <a href="file:///C:/Users/guill/Documents/GitHub/web-fall18/meghan/Final/facts.html"target="_blank">Fun Facts</a>
+  <a href="file:///C:/Users/guill/Documents/GitHub/web-fall18/meghan/Final/aboutmylife.html" target="_blank">Biography</a>
+  <a href="#">Home</a>
+</div>
+<div class="w3-content w3-section" style="max-width:400px">
+  <img src="IMG_2879.jpg" class="animate-top" style="width:100%">
+  <img src="IMG_1334.jpg" class="hover-grayscale" style="width:100%">
+  <img src="IMG_3408.jpg" class="animate-zoom" style="width:100%">
+</div>
 
+<div class="footer">
+  <h2>Created By Meghan Guiller.</h2>
+</div>
 </body>
 </html>
